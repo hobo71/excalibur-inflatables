@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Excalibur Inflatables</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<header>
+	<nav>
+		<div class="top-grid">
+			<div class="menu-left">
+				<p class="button"><strong>Book now</strong></p>
+			</div>
+
+			<div class="menu-middle">
+				<h1>Excalibur Inflatables Logo</h1>
+			</div>
+
+			<div class="menu-right">
+				<p class="button"><strong>Contact</strong></p>
+			</div>
+		</div>
+
+		<div class="button-grid">
+			<p class="button"><strong>Home</strong></p>
+			<p class="button"><strong>About</strong></p>
+			<p class="button"><strong>Castles</strong></p>
+			<p class="button"><strong>Reviews</strong></p>
+			<p class="button"><strong>Events</strong></p>
+
+		</div>
+	</nav>
+</header>
+
+<body>
+	<section id="about">
+		<div class="container">
+			<h2>About us</h2>
+		</div>
+	</section>
+
+	<section id="castles">
+		<div class="container">
+			<h2>Castles</h2>
+		</div>
+	</section>
+
+	<section id="reviews">
+		<div class="container">
+			<h2>Reviews</h2>
+		</div>
+	</section>
+
+	<section id="cta">
+		<div class="container">
+			<h2>CTA</h2>
+		</div>
+	</section>
+
+	<section id="events">
+		<div class="container">
+			<h2>Events</h2>
+		</div>
+	</section>
+
+	<section id="booking">
+		<div class="container">
+			<h2>Booking</h2>
+		</div>
+	</section>
+</body>
+<script type="text/javascript">
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
+	 // smooth scroll
+		$('body li a ').click(function(e) {
+			e.preventDefault();
+			var section = $(this).attr('href');
+			$('html,body').unbind().animate({scrollTop: $(section).offset().top-25},'slow');
+		});
+	}
+</script>
+</html>
