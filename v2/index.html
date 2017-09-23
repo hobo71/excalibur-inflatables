@@ -57,7 +57,46 @@
 	<section id="castles">
 		<div class="container">
 			<h2>Castles</h2>
-			<p>Crazy slider selector thingy with info</p>
+			<div class="castle-menu">
+				<ul>
+					<li class="castle-type" onclick="active(0)">Small</li>
+					<li class="castle-type" onclick="active(1)">Medium</li>
+					<li class="castle-type" onclick="active(2)">Large</li>
+					<li class="castle-type" onclick="active(3)">Speciality</li>
+				</ul>
+			</div>
+			<div class="castle-grid">
+				<div data-castle-size="small" class="castle-information">
+					<div class="castle-img">
+						<img src="./img/castles/ball_pond.jpg" alt="image">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div data-castle-size="medium" class="castle-information">
+					<div class="castle-img">
+						<img src="./img/castles/basic.jpg" alt="image">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div data-castle-size="large" class="castle-information">
+					<div class="castle-img">
+						<img src="./img/castles/castle.jpg" alt="image">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="cta">
+		<div class="container">
+			<a href="#booking"><h2>Click here to book the perfect castle for your event now!</h2></a>
 		</div>
 	</section>
 
@@ -93,45 +132,7 @@
 		</div>
 	</section>
 
-	<section id="cta">
-		<div class="container">
-			<a href="#booking"><h2>Click here to book the perfect castle for your event now!</h2></a>
-		</div>
-	</section>
-
-	<section id="events">
-		<div class="container">
-			<div class="dark">
-				<h2>Community Events</h2>
-				<p>Excalibur Inflatables are always looking to get involved in the community.
-					 Why not come and visit us?</p>
-				<div class="mySlides">
-					<h3>A funday</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vitae.</p>
-					<a href="https://google.com">Visit website</a>
-					<img src="./img/events/balloons.jpg" alt="Balloons">
-				</div>
-				<div class="mySlides">
-					<h3>A church</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vitae.</p>
-					<a href="https://google.com">Visit website</a>
-					<img src="./img/events/church.jpg" alt="Church">
-				</div>
-				<div class="mySlides">
-					<h3>A house</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vitae.</p>
-					<a href="https://google.com">Visit website</a>
-					<img src="./img/events/home.jpg" alt="House">
-				</div>
-				<div class="buttons">
-					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="booking">
+		<section id="booking">
 		<div class="parallax">
 			<h2>Booking</h2>
 			<p>You can make a booking by giving us a call or by sending us an email:</p>
@@ -156,7 +157,6 @@
 				Stockport area. This will be explained at the time of booking. </li><br />
 		</div>
 
-
 	</section>
 
 </body>
@@ -171,23 +171,21 @@
 		});
 	}
 </script>
+
 <script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-		showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		if (n > x.length) {slideIndex = 1}
-		if (n < 1) {slideIndex = x.length} ;
-		for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
+	function active(id){
+		var list = document.getElementsByClassName('castle-type');
+		for (i = 0; list[i]; i++){
+			if (list[i] == list[id]){
+				console.log('add pos ' + [i]);
+				list[i].classList.add("current");
+			}
+			else{
+				console.log('clear pos ' + [i]);
+				list[i].classList.remove("current");
+			}
 		}
-		x[slideIndex-1].style.display = "block";
 	}
 </script>
+
 </html>

@@ -79,6 +79,45 @@ nav .button-grid{
 
 /* Castles */
 
+#castles ul{
+	padding-left: 0;
+}
+
+#castles li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 2.5% 0 2.5%;
+	border-bottom: 5px solid #87d1ff;
+}
+
+#castles li:hover{
+	border-bottom: 5px solid #ef6e95;
+	transition: 0.2s;
+}
+
+#castles .current{
+	border-bottom: 5px solid white;
+	transition: 0.2s;
+}
+
+#castles .castle-grid{
+	display: grid;
+	grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+#castles .castle-img{
+}
+
+#castles .castle-desc{
+}
+
+/* CTA */
+
+#cta a{
+	display: block;
+	color: black;
+}
+
 /* Reviews */
 
 #reviews .parallax{
@@ -101,32 +140,6 @@ nav .button-grid{
 	width: 80%;
 	max-width: 180px;
 	margin: auto;
-}
-
-/* CTA */
-#cta a{
-	display: block;
-	color: black;
-}
-
-/* Events Slider */
-#events{
-		background-color: #6279b8;
-}
-
-#events img{
-	width: 80%;
-	border-radius: 5px;
-}
-
-#events .mySlides, #events .buttons{
-	padding: 10px 0 20px 0;
-	border: 1px solid #efefef;
-}
-
-#events a{
-	display: block;
-	color: white;
 }
 
 /* Booking */
