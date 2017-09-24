@@ -22,7 +22,8 @@ body{
 }
 
 .button{
-		padding: 15px 0 15px 0;
+		padding: 10px 10px 10px 10px;
+		margin-bottom: 5px;
 }
 
 section {
@@ -47,6 +48,14 @@ header{
 	padding: 0;
 	margin: 0;
 	border-bottom: 3px solid #ffffff;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
+nav {
+	min-height: 115px;
 }
 
 nav .top-grid{
@@ -56,9 +65,24 @@ nav .top-grid{
 }
 
 nav .button-grid{
-	display: grid;
-	grid-template-columns: 20% 20% 20% 20% 20%;
 	text-align: center;
+}
+
+nav .ul{
+	list-style: none;
+	margin: auto;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 2.5% 0 2.5%;
+	text-align: center;
+	cursor: pointer;
+}
+
+#pad{
+	min-height: 115px;
 }
 
 /* About */
@@ -92,6 +116,7 @@ nav .button-grid{
 
 #castles li:hover{
 	border-bottom: 5px solid #ef6e95;
+	cursor: pointer;
 	transition: 0.2s;
 }
 
@@ -106,6 +131,7 @@ nav .button-grid{
 }
 
 #castles .castle-img{
+
 }
 
 #castles .castle-desc{

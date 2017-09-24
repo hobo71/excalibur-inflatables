@@ -26,17 +26,21 @@
 		</div>
 
 		<div class="button-grid">
-			<p class="button"><strong>Home</strong></p>
-			<p class="button"><strong>About</strong></p>
-			<p class="button"><strong>Castles</strong></p>
-			<p class="button"><strong>Reviews</strong></p>
-			<p class="button"><strong>Events</strong></p>
-
+			<a href="#about"><li class="button"><strong>About</strong></li></a>
+			<a href="#castles"><li class="button"><strong>Castles</strong></li></a>
+			<a href="#reviews"><li class="button"><strong>Reviews</strong></li></a>
+			<a href="#booking"><li class="button"><strong>Contact</strong></li></a>
 		</div>
+
 	</nav>
 </header>
 
 <body>
+
+	<div id="pad">
+		clear
+	</div>
+
 	<section id="about">
 		<div class="parallax dark">
 			<h2>About us</h2>
@@ -186,6 +190,17 @@
 			}
 		}
 	}
+</script>
+
+<script type="text/javascript">
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
+ // smooth scroll
+$('header a').click(function(e) {
+  e.preventDefault();
+  var section = $(this).attr('href');
+  $('html,body').unbind().animate({scrollTop: $(section).offset().top-115},'slow');
+});
+}
 </script>
 
 </html>
