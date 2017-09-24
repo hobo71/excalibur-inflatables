@@ -11,26 +11,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <header>
+	<div class="mobile-logo-banner">
+		<img src="../img/banner.png" alt="Excalibur Inflatables Logo">
+	</div>
+
 	<nav>
-		<div class="top-grid">
-			<div class="menu-left">
-				<p class="button"><strong>Book now</strong></p>
+		<div class="navbar-nav">
+			<div class="desktop-logo-banner">
+				<img src="../img/banner.png" alt="Excalibur Inflatables Logo">
 			</div>
-
-			<div class="menu-middle">
-				<h1>Excalibur Inflatables Logo</h1>
-			</div>
-
-			<div class="menu-right">
-				<p class="button"><strong>Contact</strong></p>
-			</div>
-		</div>
-
-		<div class="button-grid">
 			<a href="#about"><li class="button"><strong>About</strong></li></a>
 			<a href="#castles"><li class="button"><strong>Castles</strong></li></a>
 			<a href="#reviews"><li class="button"><strong>Reviews</strong></li></a>
-			<a href="#booking"><li class="button"><strong>Contact</strong></li></a>
+			<a href="#booking"><li class="button"><strong>Book Now</strong></li></a>
+		</div>
+
+		<div class="mobile-nav">
+			<a href="#about"><li class="button"><strong>About</strong></li></a>
+			<a href="#castles"><li class="button"><strong>Castles</strong></li></a>
+			<a href="#reviews"><li class="button"><strong>Reviews</strong></li></a>
+			<a href="#booking"><li class="button"><strong>Book Now</strong></li></a>
 		</div>
 
 	</nav>
@@ -38,8 +38,7 @@
 
 <body>
 
-	<div id="pad">
-	</div>
+	<div id="desktop-pad"></div>
 
 	<section id="about">
 		<div class="parallax dark">
@@ -127,6 +126,8 @@
 						<p>Circus - 15ft x 15ft - £80</p>
 					</div>
 					<div class="castle-desc">
+					</div>
+					<div class="castle-desc">
 						<img src="./img/castles/sunshine.jpg" alt="Sunshine">
 						<p>Sunshine - 16ft x 16ft - £80</p>
 					</div>
@@ -147,6 +148,8 @@
 						<p>Small Slide - 16ft (L) x 9ft (W) x 7ft (H) - £70</p>
 					</div>
 					<div class="castle-desc">
+					</div>
+					<div class="castle-desc">
 						<img src="./img/castles/large_slide.png" alt="Large Slide">
 						<p>Large Slide - 24ft (L) x 12ft (W) x 10ft (H) - £130</p>
 					</div>
@@ -165,6 +168,8 @@
 					<div class="castle-desc">
 						<img src="./img/castles/penalty_shoot.jpg" alt="Penalty Shootout">
 						<p>Penalty Shootout - 22ft x 12ft - £80</p>
+					</div>
+					<div class="castle-desc">
 					</div>
 					<div class="castle-desc">
 						<img src="./img/castles/pole_joust.jpg" alt="Pole Joust">
@@ -269,7 +274,7 @@
 		</div>
 
 	</section>
-
+	<div id="mobile-pad"></div>
 </body>
 
 <script type="text/javascript">
@@ -334,7 +339,7 @@
 	$('header a').click(function(e) {
 	  e.preventDefault();
 	  var section = $(this).attr('href');
-	  $('html,body').unbind().animate({scrollTop: $(section).offset().top-115},'slow');
+	  $('html,body').unbind().animate({scrollTop: $(section).offset().top-198},'slow');
 	});
 	}
 </script>

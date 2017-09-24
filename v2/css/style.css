@@ -12,6 +12,7 @@ html{
 body{
 	padding: 0;
 	margin: 0;
+	z-index: -100;
 }
 
 .button:hover{
@@ -23,7 +24,7 @@ body{
 
 .button{
 		padding: 10px 10px 10px 10px;
-		margin-bottom: 5px;
+		margin: 10px 0 10px 0;
 }
 
 .button2{
@@ -45,7 +46,10 @@ h2 {
 a{
 	text-decoration: none;
 	color: black;
-	padding-bottom: 25px;
+}
+
+img{
+	border-radius: 5px;
 }
 
 /* Navigation */
@@ -54,25 +58,39 @@ header{
 	background-color: #ef6e95;
 	padding: 0;
 	margin: 0;
-	border-bottom: 3px solid #ffffff;
+	border-bottom: 3px solid black;
+}
+
+header nav .desktop-logo-banner{
+	display: none;
+}
+
+header .mobile-logo-banner{
+	margin: 0 20% 10px 20%;
+	padding-top: 10px;
+}
+
+header .mobile-logo-banner img{
+	max-width: 100%;
+}
+
+nav .mobile-nav{
+	background-color: #ef6e95;
+	text-align: center;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+}
+
+nav .navbar-nav{
+	background-color: #ef6e95;
+	text-align: center;
+	display: none;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
 	width: 100vw;
-}
-
-nav {
-	min-height: 115px;
-}
-
-nav .top-grid{
-	display: grid;
-	grid-template-columns: 33.333% 33.333% 33.333%;
-	text-align: center;
-}
-
-nav .button-grid{
-	text-align: center;
 }
 
 nav .ul{
@@ -83,13 +101,17 @@ nav .ul{
 nav li{
 	list-style: none;
 	display: inline-block;
-	margin: 0 2.5% 0 2.5%;
 	text-align: center;
 	cursor: pointer;
 }
 
-#pad{
-	min-height: 115px;
+#desktop-pad{
+	min-height: 205px;
+	display: none;
+}
+
+#mobile-pad{
+	min-height: 60px;
 }
 
 /* About */
@@ -153,6 +175,7 @@ nav li{
 #cta a{
 	display: block;
 	background-color: #ffe65b;
+	padding-bottom: 25px;
 }
 
 #cta a:hover{
@@ -206,4 +229,60 @@ nav li{
 
 #booking li{
 	font-size: 11px;
+}
+
+@media only screen and (min-width: 900px) {
+    header .navbar-nav .desktop-logo-banner{
+			max-width: 50%;
+			margin: 0 25% 0 25%;
+			display: block;
+		}
+
+		header .navbar-nav .desktop-logo-banner img{
+			max-width: 480px;
+			padding-top: 15px;
+		}
+
+		header .mobile-nav{
+			display: none;
+		}
+
+		header .mobile-logo-banner{
+			display: none;
+		}
+
+		header nav .navbar-nav{
+			display: block;
+			height: 208px;
+		}
+
+		#desktop-pad{
+			display: block;
+		}
+
+		#about h2{
+			padding-top: 15vh;
+		}
+
+		#about .parallax{
+			height: 50vh;
+		}
+
+		#castles .castle-grid{
+			width: 70%;
+			margin: 0 auto 0 auto;	
+		}
+
+		#castles img{
+			width: 20vw;
+		}
+
+		#reviews .review-grid{
+			width: 50%;
+			margin: 0 auto 0 auto;
+		}
+
+		#mobile-pad{
+			display: none;
+		}
 }
