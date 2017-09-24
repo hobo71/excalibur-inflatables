@@ -26,6 +26,12 @@ body{
 		margin-bottom: 5px;
 }
 
+.button2{
+		border: 5px solid white;
+		border-radius: 5px;
+		padding: 5px 5px 5px 5px;
+}
+
 section {
 	border-bottom: 2px solid;
 	text-align: center;
@@ -111,8 +117,7 @@ nav li{
 #castles li{
 	list-style: none;
 	display: inline-block;
-	margin: 0 2.5% 0 2.5%;
-	border-bottom: 5px solid #87d1ff;
+	margin: 0 1% 0 1%;
 }
 
 #castles li:hover{
@@ -122,17 +127,21 @@ nav li{
 }
 
 #castles .current{
-	border-bottom: 5px solid white;
+	border-bottom: 5px solid #ffe65b;
 	transition: 0.2s;
 }
 
-#castles .castle-grid{
+#castles .castle-information{
 	display: grid;
 	grid-template-columns: 33.333% 33.333% 33.333%;
 }
 
+#castles img{
+	width: 30vw;
+}
+
 #castles .showing{
-	display: block;
+	display: grid;
 }
 
 #castles .hiding{
@@ -143,7 +152,13 @@ nav li{
 
 #cta a{
 	display: block;
-	color: black;
+	background-color: #ffe65b;
+}
+
+#cta a:hover{
+	display: block;
+	background-color: #edffab;
+	transition: 0.5s;
 }
 
 /* Reviews */

@@ -3,6 +3,7 @@
 <head>
 	<title>Excalibur Inflatables</title>
 	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -62,122 +63,141 @@
 			<h2>Castles</h2>
 			<div class="castle-menu">
 				<ul>
-					<li class="castle-type" onclick="active(0)">Small</li>
-					<li class="castle-type" onclick="active(1)">Medium</li>
-					<li class="castle-type" onclick="active(2)">Large</li>
-					<li class="castle-type" onclick="active(3)">Speciality</li>
+					<li class="castle-type button2" onclick="active(0)">Small</li>
+					<li class="castle-type button2" onclick="active(1)">Medium</li>
+					<li class="castle-type button2" onclick="active(2)">Large</li>
+					<li class="castle-type button2" onclick="active(3)">Speciality</li>
 				</ul>
+				<p id="category-desc">Have a look at our wide range of bouncy castles
+				catering for children's parties in the Stockport and Wilmslow area.</p>
 			</div>
 			<div class="castle-grid">
 				<!-- Small castles !-->
-				<div class="castle-information 0">
-					<div class="castle-img">
+				<div class="castle-information 0 hiding">
+					<div class="castle-desc">
 						<img src="./img/castles/ball_pond.jpg" alt="Ball Pond">
+						<p>Ball Pond - 8ft x 8ft - £50</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/sweets.jpg" alt="Sweets">
+						<p>Sweets - 10ft x 10ft - £50</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/space.jpg" alt="Space">
+						<p>Space - 10ft x 10ft - £50</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
-						<img src="./img/castles/princess_14.png" alt="Princess 14ft">
-					</div>
-					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/super_heroes.png" alt="Super Heroes">
+						<p>Super Heroes - 10ft x 12ft - £55</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/basic.jpg" alt="Basic">
+						<p>Basic Castle - 12ft x 12ft - £50</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/palm_tree.png" alt="Palm Tree">
+						<p>Palm Tree - 12ft x 12ft - £55</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/wizard.jpg" alt="Wizard">
+						<p>Wizard - 12ft x 12ft - £55</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/jungle.jpg" alt="Jungle">
+						<p>Jungle - 12ft x 12ft - £55</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
-					</div>
-				</div>
-				<div class="castle-information 0">
-					<div class="castle-img">
 						<img src="./img/castles/princess_12.png" alt="Princess 12ft">
-					</div>
-					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+						<p>Princess (Small) - 12ft x 14ft - £60</p>
 					</div>
 				</div>
 
 				<!-- Medium castles !-->
-				<div class="castle-information 1">
-					<div class="castle-img">
-						<img src="./img/castles/basic.jpg" alt="image">
+				<div class="castle-information 1 hiding">
+					<div class="castle-desc">
+						<img src="./img/castles/stagecoach.jpg" alt="Stagecoach">
+						<p>Stagecoach - 13ft x 13ft - £60</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+						<img src="./img/castles/princess_14.png" alt="Princess 14ft">
+						<p>Princess (Medium) - 14ft x 14ft - £70</p>
+					</div>
+					<div class="castle-desc">
+						<img src="./img/castles/circus.png" alt="Circus">
+						<p>Circus - 15ft x 15ft - £80</p>
+					</div>
+					<div class="castle-desc">
+						<img src="./img/castles/sunshine.jpg" alt="Sunshine">
+						<p>Sunshine - 16ft x 16ft - £80</p>
 					</div>
 				</div>
 
 				<!-- Large castles !-->
-				<div class="castle-information 2">
-					<div class="castle-img">
-						<img src="./img/castles/castle.jpg" alt="image">
+				<div class="castle-information 2 hiding">
+					<div class="castle-desc">
+						<img src="./img/castles/party_time.png" alt="Party Time">
+						<p>Party Time - 18ft x 19ft - £100</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+						<img src="./img/castles/large_castle.jpg" alt="Large Castle">
+						<p>Large Castle - 21ft x 25ft - £155</p>
+					</div>
+					<div class="castle-desc">
+						<img src="./img/castles/small_slide.jpg" alt="Small Slide">
+						<p>Small Slide - 16ft (L) x 9ft (W) x 7ft (H) - £70</p>
+					</div>
+					<div class="castle-desc">
+						<img src="./img/castles/large_slide.png" alt="Large Slide">
+						<p>Large Slide - 24ft (L) x 12ft (W) x 10ft (H) - £130</p>
 					</div>
 				</div>
 
 				<!-- Specialty castles !-->
-				<div class="castle-information 3">
-					<div class="castle-img">
-						<img src="./img/castles/sumo.jpg" alt="image">
+				<div class="castle-information 3 hiding">
+					<div class="castle-desc">
+						<img src="./img/castles/sumo.jpg" alt="Sumo">
+						<p>Sumo - 16ft diameter - £105</p>
 					</div>
 					<div class="castle-desc">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+						<img src="./img/castles/gladiators.jpg" alt="Gladiators">
+						<p>Gladiators - 18ft x 15ft - £95</p>
+					</div>
+					<div class="castle-desc">
+						<img src="./img/castles/penalty_shoot.jpg" alt="Penalty Shootout">
+						<p>Penalty Shootout - 22ft x 12ft - £80</p>
+					</div>
+					<div class="castle-desc">
+						<img src="./img/castles/pole_joust.jpg" alt="Pole Joust">
+						<p>Pole Joust - 10ft x 12ft - £105</p>
+					</div>
+				</div>
+
+				<!-- Default view !-->
+				<div class="castle-information 4">
+					<div class="castle-desc default">
+						<img src="./img/castles/palm_tree.png" alt="Palm Tree">
+						<p>Palm Tree - Small - £55</p>
+					</div>
+					<div class="castle-desc default">
+						<img src="./img/castles/wizard.jpg" alt="Wizard">
+						<p>Wizard - Small - £50</p>
+					</div>
+					<div class="castle-desc default">
+						<img src="./img/castles/circus.png" alt="Circus">
+						<p>Circus - Medium - £75</p>
+					</div>
+
+					<div class="castle-desc default">
+						<img src="./img/castles/sunshine.jpg" alt="Sunshine">
+						<p>Sunshine - Medium - £80</p>
+					</div>
+					<div class="castle-desc default">
+						<img src="./img/castles/large_slide.png" alt="Large Slide">
+						<p>Large Slide - Large - £130</p>
+					</div>
+					<div class="castle-desc default">
+						<img src="./img/castles/sumo.jpg" alt="Sumo">
+						<p>Sumo - Specialty - £105</p>
 					</div>
 				</div>
 
@@ -267,6 +287,22 @@
 	function active(id){
 		var menuList = document.getElementsByClassName('castle-type');
 		var allCastles = document.getElementsByClassName('castle-information');
+
+		switch (id){
+			case 0:
+				text = "Our Small bouncy castles are suitable for parties for young children, and allow up to 10 children at a time.";
+				break;
+			case 1:
+				text = "Medium bouncy castles are suitable for parties of bigger groups of 15+ or older children.";
+				break;
+			case 2:
+				text = "Our Large bouncy castles are suitable for larger events such as charity fundraisers or substantial groups of children.";
+				break;
+			case 3:
+				text = "Our Specialty bouncy castles are suitable for adult parties and charity events.";
+				break;
+		}
+		document.getElementById('category-desc').innerHTML = text;
 
 		for (i = 0; menuList[i]; i++){
 			if (menuList[i] == menuList[id]){
