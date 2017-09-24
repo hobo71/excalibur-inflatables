@@ -38,7 +38,6 @@
 <body>
 
 	<div id="pad">
-		clear
 	</div>
 
 	<section id="about">
@@ -70,15 +69,90 @@
 				</ul>
 			</div>
 			<div class="castle-grid">
-				<div data-castle-size="small" class="castle-information">
+				<!-- Small castles !-->
+				<div class="castle-information 0">
 					<div class="castle-img">
-						<img src="./img/castles/ball_pond.jpg" alt="image">
+						<img src="./img/castles/ball_pond.jpg" alt="Ball Pond">
 					</div>
 					<div class="castle-desc">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
 					</div>
 				</div>
-				<div data-castle-size="medium" class="castle-information">
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/sweets.jpg" alt="Sweets">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/space.jpg" alt="Space">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/princess_14.png" alt="Princess 14ft">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/super_heroes.png" alt="Super Heroes">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/basic.jpg" alt="Basic">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/palm_tree.png" alt="Palm Tree">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/wizard.jpg" alt="Wizard">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/jungle.jpg" alt="Jungle">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+				<div class="castle-information 0">
+					<div class="castle-img">
+						<img src="./img/castles/princess_12.png" alt="Princess 12ft">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+
+				<!-- Medium castles !-->
+				<div class="castle-information 1">
 					<div class="castle-img">
 						<img src="./img/castles/basic.jpg" alt="image">
 					</div>
@@ -86,7 +160,9 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
 					</div>
 				</div>
-				<div data-castle-size="large" class="castle-information">
+
+				<!-- Large castles !-->
+				<div class="castle-information 2">
 					<div class="castle-img">
 						<img src="./img/castles/castle.jpg" alt="image">
 					</div>
@@ -94,6 +170,17 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
 					</div>
 				</div>
+
+				<!-- Specialty castles !-->
+				<div class="castle-information 3">
+					<div class="castle-img">
+						<img src="./img/castles/sumo.jpg" alt="image">
+					</div>
+					<div class="castle-desc">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, facilis.</p>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
@@ -178,29 +265,42 @@
 
 <script>
 	function active(id){
-		var list = document.getElementsByClassName('castle-type');
-		for (i = 0; list[i]; i++){
-			if (list[i] == list[id]){
-				console.log('add pos ' + [i]);
-				list[i].classList.add("current");
+		var menuList = document.getElementsByClassName('castle-type');
+		var allCastles = document.getElementsByClassName('castle-information');
+
+		for (i = 0; menuList[i]; i++){
+			if (menuList[i] == menuList[id]){
+				menuList[i].classList.add("current");
+
 			}
 			else{
-				console.log('clear pos ' + [i]);
-				list[i].classList.remove("current");
+				menuList[i].classList.remove("current");
+
+			}
+		}
+
+		for (i = 0; allCastles[i]; i++){
+			if (allCastles[i] == allCastles[id]){
+				allCastles[i].classList.add("showing");
+				allCastles[i].classList.remove("hiding");
+			}
+			else{
+				allCastles[i].classList.add("hiding");
+				allCastles[i].classList.remove("showing");
 			}
 		}
 	}
 </script>
 
 <script type="text/javascript">
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
- // smooth scroll
-$('header a').click(function(e) {
-  e.preventDefault();
-  var section = $(this).attr('href');
-  $('html,body').unbind().animate({scrollTop: $(section).offset().top-115},'slow');
-});
-}
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
+	 // smooth scroll
+	$('header a').click(function(e) {
+	  e.preventDefault();
+	  var section = $(this).attr('href');
+	  $('html,body').unbind().animate({scrollTop: $(section).offset().top-115},'slow');
+	});
+	}
 </script>
 
 </html>

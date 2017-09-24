@@ -38,6 +38,7 @@ h2 {
 
 a{
 	text-decoration: none;
+	color: black;
 	padding-bottom: 25px;
 }
 
@@ -130,11 +131,12 @@ nav li{
 	grid-template-columns: 33.333% 33.333% 33.333%;
 }
 
-#castles .castle-img{
-
+#castles .showing{
+	display: block;
 }
 
-#castles .castle-desc{
+#castles .hiding{
+	display: none;
 }
 
 /* CTA */
