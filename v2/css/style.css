@@ -232,15 +232,21 @@ nav li{
 }
 
 @media only screen and (min-width: 900px) {
-    header .navbar-nav .desktop-logo-banner{
-			max-width: 50%;
-			margin: 0 25% 0 25%;
-			display: block;
+		header .navbar-nav .desktop-logo-banner {
+			max-width: 100%;
+			display: grid;
+			grid-template-columns: 33% 33% 33%;
 		}
 
 		header .navbar-nav .desktop-logo-banner img{
 			max-width: 480px;
+			width: 100%;
+			margin: auto auto auto auto;
 			padding-top: 15px;
+		}
+
+		header .navbar-nav .desktop-logo-banner h2{
+			margin: auto auto auto auto;
 		}
 
 		header .mobile-nav{
