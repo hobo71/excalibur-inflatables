@@ -84,6 +84,11 @@ nav .mobile-nav{
 	width: 100vw;
 }
 
+nav p{
+	font-size: 1em;
+	margin-top: 0;
+}
+
 nav .navbar-nav{
 	background-color: #ef6e95;
 	text-align: center;
@@ -126,6 +131,7 @@ nav li{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-bottom: 5vh;
 	margin: 0;
 }
 
