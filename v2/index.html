@@ -217,38 +217,90 @@
 	</section>
 
 	<section id="reviews">
-		<div class="container">
-			<div class="parallax dark">
-				<h2>Reviews</h2>
-				<p>Read genuine reviews from our satisfied customers who keep coming back!</p>
-				<div class="review-grid">
-					<img src="./img/castles/sweets.jpg" alt="Sweets Review">
-					<p>For our son's 8th birthday, we hired the Sweets castle from Excalibur.
-					We were really happy it was able to fit in such a small space but was big
-					enough for all of his friends! We'll be booking again for our daughter's
-					christening soon! Thank you Paul!x<br> - Jane B, Sweets 10ft x 10ft</p>
-				</div>
-				<div class="review-grid">
-					<p>Excalibur inflatables were really helpful with me and made the
-					booking process really simple. I told them how big my garden was and
-					what I was looking for, and they helped find me the perfect castle. Would
-					highly recommend to all friends and family.<br> - Susan M, Princess 12ft x 14ft</p>
-					<img src="./img/castles/princess_12.png" alt="Sweets Review">
-				</div>
-				<div class="review-grid">
-					<img src="./img/castles/large_slide.png" alt="Sweets Review">
-					<p>Our school put on a family fun day and we decided to get the large slide
-					from Excalibur Inflatables for our guests to play on and asked for donations
-					to go towards our nominated charity. The slide was a massive succes, and
-					now have a rolling contract with Excalibur for future charity events.
-				  The price and the great service is highly competitive and beats any other
-				  provider we've used in the past.<br> - James P, Large Slide</p>
+		<div class="parallax">
+			<h2>Customer Reviews</h2><br />
+				<div class="reviews-outer">
+					<i class="fa fa-arrow-left reviews-prev" aria-hidden="true"></i>
+						<div class="reviews-inner">
+							<div class="review-grid active2">
+								<div class="review">
+									<img src="./img/castles/sweets.jpg" alt="Gladiators Review">
+									<p>For our son's 8th birthday, we hired the Sweets castle from Excalibur.
+									We were really happy it was able to fit in such a small space but was big
+									enough for all of his friends! We'll be booking again for our daughter's
+									christening soon! Thank you Paul!x<br> - Jane B, Sweets 10ft x 10ft</p>
+								</div>
+								<div class="review">
+									<img src="./img/castles/large_slide.png" alt="Large Slide Review">
+									<p>Our school put on a family fun day and we decided to get the large slide
+									from Excalibur Inflatables for our guests to play on and asked for donations
+									to go towards our nominated charity. The slide was a massive succes, and
+									now have a rolling contract with Excalibur for future charity events.
+									The price and the great service is highly competitive and beats any other
+									provider we've used in the past.<br> - James P, Large Slide</p>
+								</div>
+								<div class="review">
+									<img src="./img/castles/princess_12.png" alt="Princess Review">
+									<p>Excalibur inflatables were really helpful with me and made the
+									booking process really simple. I told them how big my garden was and
+									what I was looking for, and they helped find me the perfect castle. Would
+									highly recommend to all friends and family.<br> - Susan M, Princess 12ft x 14ft</p>
+								</div>
+						</div>
+							<div class="review-grid">
+								<div class="review">
+									<img src="./img/castles/gladiators.jpg" alt="Sweets Review">
+									<p>Excalibur were very accomodating to us and supplied our party
+										for a group of teenagers with the Gladiators castle. They all loved
+										it and it was nice to see that they offered something for the older
+										kids, compared to companies we went with previously.<br> - Peter A, Gladiators 18ft x 15ft</p>
+								</div>
+								<div class="review">
+									<img src="./img/castles/sunshine.jpg" alt="Sunshine Review">
+									<p>We chose the Sunshine castle for our daughters 10th birthday for all
+									her friends. She enjoyed it very much and we will definitely be
+									booking from Paul again. Thank you very much!<br> - Rafid D, Sunshine 16ft x 16ft</p>
+								</div>
+								<div class="review">
+									<img src="./img/castles/ball_pond.jpg" alt="Ball Pond Review">
+									<p>For our newborn's christening celebration we wanted something small and
+										simple to keep her older cousins occupied after the ceremony. We chose
+										the Ball Pond as it was small enough to fit in the back room and it was
+										very affordable. 10/10 service!<br> - Shannon R, Ball Pond 8ft x 8ft</p>
+								</div>
+							</div>
+						</div>
+					<i class="fa fa-arrow-right reviews-next" aria-hidden="true"></i>
 				</div>
 			</div>
-		</div>
 	</section>
 
-		<section id="booking">
+	<section id="community-events">
+		<div class="parallax">
+			<h2>Excalibur in the Community and Local Events</h2><br />
+				<div class="events-outer">
+					<i class="fa fa-arrow-left events-prev" aria-hidden="true"></i>
+						<div class="events-inner">
+							<div class="event active">
+								<img src="./img/events/bruntwood.jpg" alt="Excalibur Inflatables at Bruntwood Park">
+								<p>Excalibur Inflatables manage the bouncy castle stationed in <strong>Bruntwood Park</strong>,
+								every sunny day throughout the year.
+								Why not come down, have a look at what we have to offer, and chat to us about
+								your special event?</p>
+							</div>
+							<div class="event">
+								<img src=./img/events/balloons.jpg alt="Balloon Call To Action">
+								<p>Do you have an event you'd like to advertise here? Contact us
+								to arrange this for you. Note: If you book a bouncy castle for your
+								local event, we'll advertise it here free of charge!</p>
+							</div>
+						</div>
+					<i class="fa fa-arrow-right events-next" aria-hidden="true"></i>
+				</div>
+			</div>
+	</section>
+
+	<section id="booking">
 		<div class="parallax">
 			<strong><h2>Booking</h2>
 			<p>You can make a booking by giving us a call or by sending us an email:</p>
@@ -332,6 +384,74 @@
 			}
 		}
 	}
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.events-next').on('click', function(){
+			var currentEvent = $('.active');
+			var nextEvent = currentEvent.next();
+
+			if(nextEvent.length){
+				currentEvent.removeClass('active').css('z-index', -10);
+				nextEvent.addClass('active').css('z-index', 10);
+			}
+			else{
+				var nextEvent = $('.event').first();
+				currentEvent.removeClass('active').css('z-index', -10);
+				nextEvent.addClass('active').css('z-index', 10);
+			}
+		})
+
+		$('.events-prev').on('click', function(){
+			var currentEvent = $('.active');
+			var prevEvent = currentEvent.prev();
+
+			if(prevEvent.length){
+				currentEvent.removeClass('active').css('z-index', -10);
+				prevEvent.addClass('active').css('z-index', 10);
+			}
+			else{
+				var nextEvent = $('.event').last();
+				currentEvent.removeClass('active').css('z-index', -10);
+				nextEvent.addClass('active').css('z-index', 10);
+			}
+		})
+	})
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.reviews-next').on('click', function(){
+			var currentEvent = $('.active2');
+			var nextEvent = currentEvent.next();
+
+			if(nextEvent.length){
+				currentEvent.removeClass('active2').css('z-index', -10);
+				nextEvent.addClass('active2').css('z-index', 10);
+			}
+			else{
+				var nextEvent = $('.review-grid').first();
+				currentEvent.removeClass('active2').css('z-index', -10);
+				nextEvent.addClass('active2').css('z-index', 10);
+			}
+		})
+
+		$('.reviews-prev').on('click', function(){
+			var currentEvent = $('.active2');
+			var prevEvent = currentEvent.prev();
+
+			if(prevEvent.length){
+				currentEvent.removeClass('active2').css('z-index', -10);
+				prevEvent.addClass('active2').css('z-index', 10);
+			}
+			else{
+				var nextEvent = $('.review-grid').last();
+				currentEvent.removeClass('active2').css('z-index', -10);
+				nextEvent.addClass('active2').css('z-index', 10);
+			}
+		})
+	})
 </script>
 
 <script>
