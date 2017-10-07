@@ -1,7 +1,7 @@
 html{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.0em;
-	background-color: #87d1ff;
+	background-image: url("../img/background-tile.png");
 }
 
 /*Global Styles*/
@@ -19,7 +19,6 @@ body{
 .button:hover{
 	color: black;
 	background-color: white;
-	border-radius: 5px;
 	transition: 0.2s;
 	cursor: pointer;
 }
@@ -27,10 +26,12 @@ body{
 .button{
 		padding: 10px 10px 10px 10px;
 		margin: 10px 0 10px 0;
+		border-radius: 5px;
 }
 
 .button2{
-		border: 5px solid white;
+		border: 5px solid #efefef;
+		background-color: white;
 		border-radius: 5px;
 		padding: 5px 5px 5px 5px;
 }
@@ -180,6 +181,13 @@ nav li{
 
 }
 
+#category-desc, .castle-desc p{
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	background-color: white;
+}
+
 #overlay{
   display:none;
   position:fixed;
@@ -275,7 +283,7 @@ nav li{
 
 #community-events i{
 	margin: auto;
-	font-size: 3em;
+	font-size: 2em;
 	padding: 10px;
 	border-radius: 5px;
 }
