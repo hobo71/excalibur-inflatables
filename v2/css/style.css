@@ -61,7 +61,6 @@ header{
 	background-color: #ef6e95;
 	padding: 0;
 	margin: 0;
-	border-bottom: 3px solid black;
 }
 
 header nav .desktop-logo-banner{
@@ -69,7 +68,7 @@ header nav .desktop-logo-banner{
 }
 
 header .mobile-logo-banner{
-	margin: 0 20% 10px 20%;
+	margin: 0 20% 0 20%;
 	padding-top: 10px;
 }
 
@@ -279,13 +278,6 @@ nav li{
 	grid-template-columns: 25% 50% 25%;
 	color: white;
 	margin: 0 auto 0 auto;
-}
-
-#community-events i{
-	margin: auto;
-	font-size: 2em;
-	padding: 10px;
-	border-radius: 5px;
 }
 
 #community-events img{
