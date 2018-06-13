@@ -36,6 +36,11 @@ body{
 		padding: 5px 5px 5px 5px;
 }
 
+.button2:hover{
+	border: 5px solid #ef6e95;
+	transition-duration: 0.5s;
+}
+
 section {
 	border-bottom: 2px solid;
 	text-align: center;
@@ -221,7 +226,7 @@ nav li{
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	color: white;
 }
 
