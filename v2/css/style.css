@@ -181,10 +181,6 @@ nav li{
 	display: grid;
 }
 
-#castles .hiding{
-
-}
-
 #category-desc, .castle-desc p{
 	display: inline-block;
 	padding: 5px 5px 5px 5px;
@@ -195,8 +191,10 @@ nav li{
 #overlay{
   display:none;
   position:fixed;
-  top:0; left;0;
-  width:100%; height:100%;
+  top:0; 
+  left:0;
+  width:100%; 
+  height:100%;
   background-color:rgba(0,0,0,0.4);
   background-repeat:no-repeat;
   background-position: center center;
