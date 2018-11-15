@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-wave5);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.506" y1="0.481" x2="0.5" y2="0.849" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#87d1ff"/>
+      <stop offset="1" stop-color="#ef6e95"/>
+    </linearGradient>
+    <clipPath id="clip-wave5">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="wave5" class="cls-1">
+    <rect class="cls-3" width="1920" height="1080"/>
+    <path id="Path_1" data-name="Path 1" class="cls-2" d="M402,1885.754c741.539-1230.131,643.371-276.8,1400.99-373.344S2630.551,832.851,2746.329,837.1s0,1048.657,0,1048.657Z" transform="translate(-692.371 -803.754)"/>
+  </g>
+</svg>

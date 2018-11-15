@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-wave6);
+      }
+
+      .cls-2 {
+        fill: #ef6e95;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-wave6">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="wave6" class="cls-1">
+    <rect class="cls-3" width="1920" height="1080"/>
+    <path id="Path_1" data-name="Path 1" class="cls-2" d="M362.13,934.684c910.44-126.95,872.283-87.361,1096.62,12.889s817.043,23.12,990.947-27.313-117.334-343.717-117.334-343.717L362.13,571.838Z" transform="translate(-402 -616)"/>
+  </g>
+</svg>
