@@ -101,6 +101,11 @@ nav .mobile-nav{
 	bottom: 0;
 	width: 100vw;
 	z-index: 1;
+	font-size: 0.6em;
+}
+
+nav .mobile-nav ul {
+	margin: 0;
 }
 
 nav p{
