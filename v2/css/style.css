@@ -250,6 +250,16 @@ nav li{
 	text-align: left;
 }
 
+#consent {
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+.email-octopus-form-row-consent:hover {
+	cursor: pointer;
+}
+
 @media only screen and (min-width: 900px) {
 	header .navbar-nav .desktop-logo-banner {
 		max-width: 100%;
