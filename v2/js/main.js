@@ -1,6 +1,6 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false ) {
     // smooth scroll
-    $('.nav-buttons a').click(function(e) {
+    $('.smooth').click(function(e) {
         e.preventDefault();
         var section = $(this).attr('href');
         var $offset = $("#desktop-pad").height();
